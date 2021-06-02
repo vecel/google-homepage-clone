@@ -1,5 +1,6 @@
 #main {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -7,55 +8,47 @@
     margin-left: 20%;
     margin-right: 20%;
     padding: 12px;
-    height: 300px;
+    height: auto;
     display: flex;
-    align-items: stretch;
     flex-direction: column;
     background-color: rgb(207, 207, 230);
 }
 
-#title_string {
-    flex: 0 0 50%;
+#title_container {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+}
+
+#title_content {
+    position: relative;
+    height: 100%;
+    margin-top: auto;
+}
+
+#title_img {
+    object-position: center bottom;
+    object-fit: contain;
 }
 
 #search_bar {
-    flex: 0 0 50%;
+    flex: 0 0 48px;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 6px;
 }
 
-h1 {
-    align-self: center;
+#magnifier {
+    width: 10%;
 }
 
-.tit {
-    display: inline-block;
-    padding: 2px;
-    color:rgb(223, 130, 202);
+#input_bar {
+    width: 80%;
 }
 
-#tit_G1 {
-    color: rgb(223, 124, 12);
-}
-
-#tit_O1 {
-    color: rgb(16, 16, 139);
-}
-
-#tit_O2 {
-    color: rgb(207, 33, 33);
-}
-
-#tit_G2 {
-    color: rgb(24, 104, 31);
-}
-
-#tit_L {
-    color: rgb(223, 130, 202);
-}
-
-#tit_U {
-    color: rgb(218, 40, 40);
-}
-
-#tit_S {
-    color: rgb(25, 172, 230);
+#keyboard_container {
+    width: 10%;
 }
