@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 100px;
+    min-width: 550px;
 }
 
 #container {
@@ -11,7 +13,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(239, 239, 241);
 }
 
 #title_container {
@@ -36,16 +37,22 @@
     width: 100%;
 }
 
+.gray_border {
+    border: solid rgb(119, 121, 119);
+    border-radius: 35px;
+    border-width: 1.2px;
+}
+
 #search_bar {
     flex: 0 0 32px;
     display: flex;
     justify-content: space-between;
-    
     padding: 6px;
-    border: solid rgb(119, 121, 119);
-    border-radius: 35px;
-    border-width: 1.2px;
     margin-top: 12px;
+}
+
+#search_bar:hover {
+    box-shadow: 0 3px 8px rgb(139, 141, 139);
 }
 
 .svg_search_bar {
@@ -59,18 +66,60 @@
 
 #magnifier {
     width: 32px;
+    cursor: pointer;
 }
 
 #input_bar_container {
     width: 85%;
+    display: flex;
 }
 
 #input_bar {
-    
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1 0 100%;
     padding: 0 4px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cancel_btn {
+    background-color: saddlebrown;
+    flex: 1 0 auto;
+    max-width: 32px;
+    visibility: hidden;
+    cursor: pointer;
 }
 
 #keyboard_container {
     width: 32px;
+    cursor: pointer;
 }
 
+#find_btn_container {
+    flex: 0 0 100px;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.utility_btn {
+    margin: 4px 16px 0 16px;
+    background-color: transparent;
+    border: none;
+    width: 128px;
+    height: 32px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.utility_btn:hover {
+    border: solid rgb(119, 121, 119);
+    border-radius: 35px;
+    border-width: 1.2px;
+    /* czy da sie zamiast 3 linii wstawic styl klasy .gray_border? */
+}
