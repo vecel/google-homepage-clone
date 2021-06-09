@@ -1,10 +1,40 @@
+:root {
+    --light-gray: rgb(119, 121, 119);
+}
+
 #main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     min-width: 550px;
 }
+
+#navbar {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar_item {
+    margin: 6px 0;
+    padding: 0 8px;
+    align-content: center;
+}
+
+.navbar_item .nav_link {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    display: inline;
+    text-align: center;
+}
+
+/*
+#account_logo:hover {
+   add amogus here 
+}*/
 
 #container {
     margin-left: 20%;
@@ -43,7 +73,7 @@
 }*/
 
 .gray_border {
-    border: solid rgb(119, 121, 119);
+    border: solid var(--light-gray);
     border-radius: 35px;
     border-width: 1.2px;
 }
@@ -64,7 +94,7 @@
 }
 
 .svg_search_bar {
-    fill: rgb(119, 121, 119);
+    fill: var(--light-gray);;
     width: 24px;
     height: 24px;
     position: relative;
@@ -126,7 +156,7 @@
 }
 
 .utility_btn:hover {
-    border: solid rgb(119, 121, 119);
+    border: solid var(--light-gray);;
     border-radius: 35px;
     border-width: 1.2px;
     /* czy da sie zamiast 3 linii wstawic styl klasy .gray_border? */
