@@ -16,9 +16,10 @@
 }
 
 .navbar_item {
-    margin: 6px 0;
+    margin: 6px 4px;
     padding: 0 8px;
-    align-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .navbar_item .nav_link {
@@ -26,15 +27,20 @@
     color: rgb(50, 50, 50);
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: auto;
-    display: inline;
-    text-align: center;
 }
 
-/*
-#account_logo:hover {
-   add amogus here 
-}*/
+#account_logo_div {
+    width: 32px;
+    height: 32px;
+    padding: 0 0px;
+    background-image: url("img/account_logo.png");
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+#account_logo_div:hover {
+   background-image: url("img/amogus.png");
+}
 
 #container {
     margin-left: 20%;
