@@ -2,11 +2,20 @@
     --light-gray: rgb(119, 121, 119);
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 #main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /*margin-top: 100px;*/
     min-width: 550px;
 }
 
@@ -43,12 +52,11 @@
 }
 
 #container {
-    margin-left: 20%;
-    margin-right: 20%;
     padding: 12px;
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 #title_container {
@@ -73,13 +81,8 @@
     width: 100%;
 }
 
-/*
-#title_img:hover {
-    background: linear-gradient(90deg, gray 0%, magenta 25%, magenta 75%, gray 100%);
-}*/
-
 .gray_border {
-    border: solid var(--light-gray);
+    border: solid rgb(150, 150, 150);
     border-radius: 35px;
     border-width: 1.2px;
 }
@@ -166,4 +169,41 @@
     border-radius: 35px;
     border-width: 1.2px;
     /* czy da sie zamiast 3 linii wstawic styl klasy .gray_border? */
+}
+
+#placeholder {
+    flex-grow: 1;
+    height: 100%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(230, 230, 230);
+    color: var(--light-gray);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: flex-end;
+}
+
+#country {
+    padding: 15px 15px;
+    border-bottom: solid rgb(125, 125, 125);
+    border-width: 1px;
+}
+
+#politicy_privacy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_segment {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_info .footer_links {
+    display: flex;
+    padding: 15px 15px;
 }
